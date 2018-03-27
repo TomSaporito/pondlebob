@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Pondlebob</title>
+    <!-- Required meta tags -->
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="http://www.fun-with-pictures.com/image-files/th_alphabet-letter-p.jpg">
+
+    
+
+    <style>
+        .container{
+            position: relative;
+        }
+        .loader-container{
+            display: none;
+        }
+    
+        .loader-container.drop-in.loading{
+            color: #000000;
+            font-size: 2rem;
+            position: fixed;
+            display: block;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 2000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #f9f9f9;
+            text-align: center;
+        }
+    
+        .loader-container.loading .loader-drop{
+            animation: drop 1s linear 1;
+            animation-fill-mode: forwards;
+        }
+        .loader-container.loading .loader-text{
+            animation: shine 2s linear infinite;
+            animation-delay: 1s;
+        }
+
+        @keyframes shine {
+         16.6%{font-family: Arial, sans-serif;}
+         33.3%{font-family: Times, serif;}
+         50%{font-family: Andale Mono, monospace;}
+         66.3%{font-family: Comic Sans, Comic Sans MS, cursive;}
+         83.6%{font-family: Impact, fantasy;}
+            /*Arial, sans-serif; 
+            Helvetica, sans-serif;
+            Gill Sans, sans-serif;
+            Lucida, sans-serif;
+            Helvetica Narrow, sans-serif;
+            sans-serif; */
+
+
+            /* Times, serif;
+            Times New Roman, serif;
+            Palatino, serif;
+            Bookman, serif;
+            New Century Schoolbook, serif;
+            serif; */
+
+
+            /* Andale Mono, monospace;
+            Courier New, monospace;
+            Courier, monospace;
+            Lucidatypewriter, monospace;
+            Fixed, monospace;
+            monospace; */
+
+
+            /* Comic Sans, Comic Sans MS, cursive;
+            Zapf Chancery, cursive;
+            Coronetscript, cursive;
+            Florence, cursive;
+            Parkavenue, cursive;
+            cursive; */
+
+
+            /* Impact, fantasy;
+            Arnoldboecklin, fantasy;
+            Oldtown, fantasy;
+            Blippo, fantasy;
+            Brushstroke, fantasy;
+            fantasy; */
+
+        }
+
+        @keyframes drop {
+            0% { transform: translateY(-30px); opacity: 0 }
+            50% { transform: translateY(0); opacity: 1; }
+
+        }
+    </style>
+    <script defer src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <span hidden="hidden"
+          data-lazy-style="bootstrap"
+          data-href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+          data-integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+          data-crossorigin="anonymous"></span>
+    
+
+
+<div id="full-page-loader" class="loader-container loading drop-in">
+    <div class="loader-drop">
+        <span class="loader-text">Pondlebob</span>
+    </div>
+</div>
+<div id="root">
+    <h1>
+        We f%$#ed up and can't load Pondlebob at the moment.  Please try again.
+    </h1>
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script defer src="/dist/main.bundle.min.js"></script>
+</body>
+</html>

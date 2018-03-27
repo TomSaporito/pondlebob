@@ -1,0 +1,14 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+
+.DS_Store
+.env
+
+# dependencies for node will be removed
+/public/node_modules/
+/node_modules
+/public/node_modules
+public/node_modules
+node_modules
+# dependencies
+/node_modules

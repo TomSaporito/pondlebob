@@ -1,0 +1,1 @@
+export default var topanga = {test: true, pointless: 'also true'};

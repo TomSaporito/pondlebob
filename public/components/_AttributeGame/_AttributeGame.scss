@@ -1,0 +1,36 @@
+body{
+    background: aliceblue;
+}
+
+.go-spin{
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid black; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin .5s linear infinite;
+}
+.no-spin{
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid black; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+.spin-container{
+    display: inline-block;
+    position: relative;
+}
+
+.spin-count{
+        position: absolute;
+        font-size: 3.2rem;
+        top: 20px;
+        left: 46px;
+
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Pondlebob - Login</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <style>
+            .container{
+                position: relative;
+            }
+            .loader-container{
+                display: none;
+            }
+        
+            .loader-container.drop-in.loading{
+                color: #000000;
+                font-size: 2rem;
+                position: fixed;
+                display: block;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: 2000;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: #f9f9f9;
+                text-align: center;
+            }
+        
+            .loader-container.loading .loader-drop{
+                animation: drop 1s linear 1;
+                animation-fill-mode: forwards;
+            }
+            .loader-container.loading .loader-text{
+                animation: shine 2s linear infinite;
+                animation-delay: 1s;
+            }
+    
+            @keyframes shine {
+             16.6%{font-family: Arial, sans-serif;}
+             33.3%{font-family: Times, serif;}
+             50%{font-family: Andale Mono, monospace;}
+             66.3%{font-family: Comic Sans, Comic Sans MS, cursive;}
+             83.6%{font-family: Impact, fantasy;}
+                /*Arial, sans-serif; 
+                Helvetica, sans-serif;
+                Gill Sans, sans-serif;
+                Lucida, sans-serif;
+                Helvetica Narrow, sans-serif;
+                sans-serif; */
+    
+    
+                /* Times, serif;
+                Times New Roman, serif;
+                Palatino, serif;
+                Bookman, serif;
+                New Century Schoolbook, serif;
+                serif; */
+    
+    
+                /* Andale Mono, monospace;
+                Courier New, monospace;
+                Courier, monospace;
+                Lucidatypewriter, monospace;
+                Fixed, monospace;
+                monospace; */
+    
+    
+                /* Comic Sans, Comic Sans MS, cursive;
+                Zapf Chancery, cursive;
+                Coronetscript, cursive;
+                Florence, cursive;
+                Parkavenue, cursive;
+                cursive; */
+    
+    
+                /* Impact, fantasy;
+                Arnoldboecklin, fantasy;
+                Oldtown, fantasy;
+                Blippo, fantasy;
+                Brushstroke, fantasy;
+                fantasy; */
+    
+            }
+    
+            @keyframes drop {
+                0% { transform: translateY(-30px); opacity: 0 }
+                50% { transform: translateY(0); opacity: 1; }
+    
+            }
+        </style>
+</head>
+<body>
+    <div id="full-page-loader" class="loader-container loading drop-in">
+        <div class="loader-drop">
+            <span class="loader-text">Pondlebob</span>
+        </div>
+    </div>
+    <div id="root">
+
+    </div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>
